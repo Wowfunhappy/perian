@@ -22,6 +22,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <libavutil/log.h>
+#include <asl.h>
 
 #include "Codecprintf.h"
 
@@ -41,10 +42,15 @@ static int Codecvprintf(FILE *fileLog, const char *format, va_list va, int print
 	else
 	{
 #ifdef DEBUG_BUILD
-		if(print_header)
-			printf(CODEC_HEADER);
-		
-		ret = vprintf(format, va);
+		// Use ASL for debug logging so it appears in Console.app
+		char buffer[4096];
+		if(print_header) {
+			ret = vsnprintf(buffer, sizeof(buffer), format, va);
+			asl_log(NULL, NULL, ASL_LEVEL_ERR, "%s%s", CODEC_HEADER, buffer);
+		} else {
+			ret = vsnprintf(buffer, sizeof(buffer), format, va);
+			asl_log(NULL, NULL, ASL_LEVEL_ERR, "%s", buffer);
+		}
 #endif
 	}
 	

@@ -12,10 +12,13 @@ BUILDCONFIGURATION?=$(DEFAULT_BUILDCONFIGURATION)
 CP=ditto --rsrc
 RM=rm
 
-.PHONY: all perian clean latest
+.PHONY: all perian clean latest debug
 
 perian:
 	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration $(BUILDCONFIGURATION) build
+
+debug:
+	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration Development build
 
 
 #install:
