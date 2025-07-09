@@ -1,0 +1,228 @@
+Generated on Snow Leopard, using included scripts that Claude crudely adapted from Perian's original createStaticLibs.sh.
+
+Project directory goes:
+- patches
+- ffmpeg
+- createStaticLibs.sh
+- build.sh
+
+```
+#!/bin/sh -v
+PATH=$PWD/Binaries:$PATH
+
+# Set required environment variables if not already set
+SRCROOT="${SRCROOT:-$PWD}"
+BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR:-$PWD/build}"
+BUILD_STYLE="${BUILD_STYLE:-Release}"
+CONFIGURATION="${CONFIGURATION:-Release}"
+
+# For Xcode 3.2.6 on Snow Leopard, set SDK path
+SDKROOT="${SDKROOT:-/Developer/SDKs/MacOSX10.6.sdk}"
+
+# Use timestamp or manual version instead of SVN revision
+# You can set this to any version string you want
+buildid_ffmpeg="r$(date +%Y%m%d%H%M%S)"
+# Or use a manual version like: buildid_ffmpeg="r1.0.0"
+
+if [ "$MACOSX_DEPLOYMENT_TARGET" = "" ]; then
+	MACOSX_DEPLOYMENT_TARGET="10.6"
+fi
+
+CC="/Developer/usr/bin/gcc-4.2"
+
+echo "Using compiler: $CC"
+
+configureflags="--cc=$CC --disable-amd3dnow --disable-doc --disable-encoders \
+	--disable-avprobe --disable-avserver --disable-muxers --disable-network \
+	--disable-avfilter --disable-ffmpeg --disable-avconv --target-os=darwin"
+
+# Check if SDK exists
+if [ ! -d "$SDKROOT" ]; then
+	echo "Warning: SDK not found at $SDKROOT"
+	echo "Trying without SDK..."
+	cflags="-mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET -Dattribute_deprecated= -fvisibility=hidden -w"
+else
+	cflags="-isysroot $SDKROOT -mmacosx-version-min=$MACOSX_DEPLOYMENT_TARGET -Dattribute_deprecated= -fvisibility=hidden -w"
+fi
+
+if [ "$BUILD_STYLE" = "Development" -o "$CONFIGURATION" = "Development" ] ; then
+	configureflags="$configureflags --disable-optimizations --disable-asm"
+	buildid_ffmpeg="${buildid_ffmpeg}Dev"
+else
+	optcflags="-fstrict-aliasing"
+	buildid_ffmpeg="${buildid_ffmpeg}Dep"
+fi
+
+BUILD_ID_FILE="$BUILT_PRODUCTS_DIR/Universal/buildid"
+
+if [[ -e "$BUILD_ID_FILE" ]] ; then
+	oldbuildid_ffmpeg=`cat "$BUILD_ID_FILE"`
+else
+	oldbuildid_ffmpeg="buildme"
+fi
+
+QUICKBUILD="$BUILT_PRODUCTS_DIR/Universal/quickbuild"
+if [[ -e "$QUICKBUILD" ]] ; then
+	oldbuildid_ffmpeg="quick"
+	rm "$QUICKBUILD"
+fi
+
+buildi386=1
+
+# Create build directory if it doesn't exist
+mkdir -p "$BUILT_PRODUCTS_DIR"
+
+# Debug output
+echo "=== Build Configuration ==="
+echo "SRCROOT: $SRCROOT"
+echo "BUILT_PRODUCTS_DIR: $BUILT_PRODUCTS_DIR"
+echo "SDKROOT: $SDKROOT"
+echo "CC: $CC"
+echo "=========================="
+
+# Force rebuild flag - set this to 1 to always rebuild
+FORCE_REBUILD=0
+
+if [ "$buildid_ffmpeg" = "$oldbuildid_ffmpeg" ] && [ "$FORCE_REBUILD" = "0" ] ; then
+	echo "Static ffmpeg libs are up-to-date ; not rebuilding"
+else
+	echo "Static ffmpeg libs are out-of-date ; rebuilding"
+	
+	# Apply patches if they haven't been applied yet
+	# This assumes patches are already applied to the source
+	# If you need to apply patches, you can do it manually or add logic here
+	if [ -e ffmpeg/patched ] ; then
+		echo "Patches already applied"
+	else
+		# If you have patch files and want to apply them:
+		if [ -d "Patches" ] && [ -e ffmpeg ]; then
+			echo "Applying patches..."
+			cd ffmpeg
+			
+			# Apply patches if they exist
+			if [ -e ../Patches/0001-Double-INTERNAL_BUFFER_SIZE-to-fix-running-out-of-bu.patch ]; then
+				patch -p1 < ../Patches/0001-Double-INTERNAL_BUFFER_SIZE-to-fix-running-out-of-bu.patch
+			fi
+			
+			if [ -e ../Patches/0002-Workaround-for-AVI-audio-tracks-importing-1152x-too-.patch ]; then
+				patch -p1 < ../Patches/0002-Workaround-for-AVI-audio-tracks-importing-1152x-too-.patch
+			fi
+			
+			cd ..
+			touch ffmpeg/patched
+		fi
+	fi
+
+	echo "Building i386"
+	
+	mkdir -p "$BUILT_PRODUCTS_DIR"
+
+	arch=`arch`
+	# files we'd like to keep frame pointers in for in-the-wild debugging
+	fptargets="libavformat/libavformat.a libavutil/libavutil.a libavcodec/utils.o"
+	
+	#######################
+	# Intel shlibs
+	#######################
+	if [ $buildi386 -gt 0 ] ; then
+		BUILDDIR="$BUILT_PRODUCTS_DIR/i386"
+		mkdir -p "$BUILDDIR"
+
+		if [ "$BUILD_STYLE" != "Development" ] ; then
+			optcflags_i386="$optcflags -mdynamic-no-pic $x86flags"
+		fi
+
+		cd "$BUILDDIR"
+		if [ "$oldbuildid_ffmpeg" != "quick" ] ; then
+			"$SRCROOT/ffmpeg/configure" --extra-ldflags="$cflags -arch i386" \
+			--cpu=core2 --extra-cflags="-arch i386 $cflags $optcflags_i386" \
+			$configureflags || exit 1
+		
+			make depend > /dev/null 2>&1 || true
+		fi
+		
+		fpcflags=`grep -m 1 CFLAGS= "$BUILDDIR"/config.mak | sed -e s/CFLAGS=// -e s/-fomit-frame-pointer//` 
+
+		make -j3 CFLAGS="$fpcflags" V=1 $fptargets || exit 1
+		make -j3 V=1 || exit 1
+	fi
+
+	#######################
+	# lipo/copy shlibs
+	#######################
+	BUILDDIR="$BUILT_PRODUCTS_DIR/Universal"
+	INTEL="$BUILT_PRODUCTS_DIR/i386"
+	PPC="$BUILT_PRODUCTS_DIR/ppc"
+	
+	rm -rf "$BUILDDIR"
+	mkdir "$BUILDDIR"
+
+	# Since we're only building i386, just copy the files
+	# If you want to build multiple architectures, you can add that logic here
+	if [ $buildi386 -gt 0 ] ; then
+		# just copy them
+		for aa in "$INTEL"/*/*.a ; do
+			echo cp "$aa" `/bin/echo -n $aa | sed 's/i386\/.*\//Universal\//'`
+			cp "$aa" `/bin/echo -n $aa | sed 's/i386\/.*\//Universal\//'`
+		done
+	fi
+	
+	/bin/echo -n "$buildid_ffmpeg" > $BUILD_ID_FILE
+fi
+
+FINAL_BUILD_ID_FILE="$BUILT_PRODUCTS_DIR/Universal/buildid"
+if [[ -e "$FINAL_BUILD_ID_FILE" ]] ; then
+	oldbuildid_ffmpeg=`cat "$FINAL_BUILD_ID_FILE"`
+else
+	oldbuildid_ffmpeg="buildme"
+fi
+```
+
+```
+#!/bin/bash
+
+# Simple wrapper script to build ffmpeg static libraries
+# This sets up the environment and calls createStaticLibs.sh
+
+echo "Setting up build environment..."
+
+# Set build variables
+export SRCROOT="$PWD"
+export BUILT_PRODUCTS_DIR="$PWD/build"
+export BUILD_STYLE="Release"
+export CONFIGURATION="Release"
+
+# Detect SDK for Snow Leopard/Xcode 3.2.6
+if [ -d "/Developer/SDKs/MacOSX10.6.sdk" ]; then
+	export SDKROOT="/Developer/SDKs/MacOSX10.6.sdk"
+elif [ -d "/Developer/SDKs/MacOSX10.5.sdk" ]; then
+	export SDKROOT="/Developer/SDKs/MacOSX10.5.sdk"
+else
+	echo "Warning: No SDK found, will try to build without SDK"
+fi
+
+# Create build directory
+mkdir -p "$BUILT_PRODUCTS_DIR"
+
+# Check for ffmpeg directory
+if [ ! -d "ffmpeg" ]; then
+	echo "Error: ffmpeg directory not found!"
+	echo "Please make sure the ffmpeg source code is in a directory called 'ffmpeg'"
+	exit 1
+fi
+
+# Check for the main build script
+if [ ! -f "createStaticLibs.sh" ]; then
+	echo "Error: createStaticLibs.sh not found!"
+	exit 1
+fi
+
+echo "Starting build..."
+echo "===================="
+
+# Run the build script
+sh createStaticLibs.sh
+
+echo "===================="
+echo "Build complete! Check the 'build' directory for output."
+```
