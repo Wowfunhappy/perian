@@ -41,6 +41,7 @@ clean:
 	for target in $(COMPONENT_TARGETS); do \
 		xcodebuild -project Perian.xcodeproj -target $$target -configuration $(BUILDCONFIGURATION) clean; \
 	done
+	$(RM) -rf $(BUILD_DIR)
 
 
 
