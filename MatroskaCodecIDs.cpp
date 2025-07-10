@@ -618,6 +618,7 @@ AudioChannelLayout GetDefaultChannelLayout(AudioStreamBasicDescription *asbd)
 				
 			case kAudioFormatAC3:
 			case kAudioFormatAC3MS:
+			case 'ec-3':
 				acl = ac3ChannelLayouts[channelIndex];
 				break;
 				
@@ -745,6 +746,8 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 
 	{ kSubFormatUSF, "S_TEXT/USF" },
 #endif
+	{ 'ec-3', "A_EAC3" },
+	
 	{ kSubFormatSSA, "S_TEXT/SSA" },
     { kSubFormatSSA, "S_SSA" },
 	{ kSubFormatASS, "S_TEXT/ASS" },
