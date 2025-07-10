@@ -741,13 +741,17 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 	{ kAudioFormatRealLossless, "A_REAL/RALF" },
 	{ kAudioFormatRealAtrac3, "A_REAL/ATRC" },
 	
+	{ 'ec-3', "A_EAC3" },
+	
 #if 0
 	{ kBMPCodecType, "S_IMAGE/BMP" },
 
 	{ kSubFormatUSF, "S_TEXT/USF" },
 #endif
-	{ 'ec-3', "A_EAC3" },
-	
+
+#if 0
+	// Adding subtitles appears to break QuickTime Player X.
+	// It will pop up a message saying that QuickTime Player 7 is required.
 	{ kSubFormatSSA, "S_TEXT/SSA" },
     { kSubFormatSSA, "S_SSA" },
 	{ kSubFormatASS, "S_TEXT/ASS" },
@@ -755,6 +759,7 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 	{ kSubFormatUTF8, "S_TEXT/UTF8" },
 	{ kSubFormatUTF8, "S_TEXT/ASCII" },
 	{ kSubFormatVobSub, "S_VOBSUB" },
+#endif
 };
 
 
