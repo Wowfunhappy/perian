@@ -28,9 +28,5 @@
 	<string>PerianPrefPane</string>
 	<key>NSPrincipalClass</key>
 	<string>CPFPerianPrefPaneController</string>
-	<key>ApplicationsToRegister</key>
-	<array>
-		<string>Perian - Open in QT Player.app</string>
-	</array>
 </dict>
 </plist>
