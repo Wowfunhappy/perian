@@ -56,6 +56,7 @@
 				<string>mkv</string>
 				<string>mka</string>
 				<string>webm</string>
+				<string>weba</string>
 			</array>
 			<key>CFBundleTypeMIMETypes</key>
 			<array>
@@ -265,6 +266,7 @@
 					<string>mkv</string>
 					<string>mka</string>
 					<string>webm</string>
+					<string>weba</string>
 				</array>
 			</dict>
 		</dict>

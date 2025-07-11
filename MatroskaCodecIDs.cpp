@@ -707,6 +707,8 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 	{ kVideoFormatTheora, "V_THEORA" },
 	{ kVideoFormatSnow, "V_SNOW" },
 	{ kVideoFormatVP8, "V_VP8" },
+	{ 'vp09', "V_VP9" },
+	{ 'av01', "V_AV1" },
 	
 	{ kAudioFormatMPEG4AAC, "A_AAC" },
 	{ kAudioFormatMPEG4AAC, "A_AAC/MPEG4/LC" },
@@ -740,6 +742,7 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 	{ kAudioFormatRealSipro, "A_REAL/SIPR" },
 	{ kAudioFormatRealLossless, "A_REAL/RALF" },
 	{ kAudioFormatRealAtrac3, "A_REAL/ATRC" },
+	{ 'Opus', "A_OPUS" },
 	
 	{ 'ec-3', "A_EAC3" },
 	

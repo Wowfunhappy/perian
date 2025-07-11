@@ -235,7 +235,7 @@ resource 'mcfg' (kMkvImportResource, kMkvImportName)
 
 		{
 			"Matroska/WebM file",			// Media type description for MIME configuration panel and browser
-			"mkv,mka,webm",					// File extension(s), comma delimited if more than one
+			"mkv,mka,webm,weba",			// File extension(s), comma delimited if more than one
 			"QuickTime Player",				// Opening application name for MIME configuration panel and browser
 			"Perian Matroska Importer",	    // Missing software description for the missing software dialog
 			"",                             // Vendor info string (copyright, version, etc)
