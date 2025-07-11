@@ -524,6 +524,11 @@ ComponentResult MkvFinishSampleDescription(KaxTrackEntry *tr_entry, SampleDescri
 				extType = 'avcC';
 				fallbackType = 'H264';
 				break;
+				
+			case 'hvc1':
+			case 'hev1':
+				extType = 'hvcC';
+				break;
 
 			case kSubFormatVobSub:
 				// VobSub stores the .idx file in the codec private, pass it as an .IDX extension
@@ -697,6 +702,8 @@ static const MatroskaQT_Codec kMatroskaCodecIDs[] = {
 	{ kMPEG4VisualCodecType, "V_MPEG4/ISO/SP" },
 	{ kMPEG4VisualCodecType, "V_MPEG4/ISO/AP" },
 	{ kH264CodecType, "V_MPEG4/ISO/AVC" },
+	{ 'hvc1', "V_MPEGH/ISO/HEVC" },
+	{ 'hev1', "V_MPEGH/ISO/HEVC" },
 	{ kVideoFormatMSMPEG4v3, "V_MPEG4/MS/V3" },
 	{ kMPEG1VisualCodecType, "V_MPEG1" },
 	{ kMPEG2VisualCodecType, "V_MPEG2" },
