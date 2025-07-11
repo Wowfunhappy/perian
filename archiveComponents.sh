@@ -22,10 +22,6 @@ done
 cd "${BUILT_PRODUCTS_DIR}"
 mkdir -p "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
 compressAndInsertComponent "Perian.component" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
-compressAndInsertComponent "FFusion.component" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
-compressAndInsertComponent "FFission.component" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
-compressAndInsertComponent "matroska-qt.component" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
-compressAndInsertComponent "AVIImporter.component" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/"
 if [[ -d "${BUILT_PRODUCTS_DIR}/CoreAudio" ]] ; then
     compressComponents "${BUILT_PRODUCTS_DIR}/CoreAudio" "${BUILT_PRODUCTS_DIR}/Perian.prefPane/Contents/Resources/Components/CoreAudio"
 fi

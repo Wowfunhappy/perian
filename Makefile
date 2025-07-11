@@ -7,28 +7,17 @@ endif
 
 DEFAULT_BUILDCONFIGURATION=Deployment
 DEFAULT_TARGET=PerianPane
-COMPONENT_TARGETS=FFusion.component FFission.component matroska-qt.component AVIImporter.component Perian
 BUILDCONFIGURATION?=$(DEFAULT_BUILDCONFIGURATION)
 
 CP=ditto --rsrc
 RM=rm
 
-.PHONY: all perian clean latest debug components
+.PHONY: all perian clean latest debug
 
 perian:
 	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration $(BUILDCONFIGURATION) build
 
-components:
-	for target in $(COMPONENT_TARGETS); do \
-		xcodebuild -project Perian.xcodeproj -target $$target -configuration $(BUILDCONFIGURATION) build; \
-	done
-
-all: components perian
-
 debug:
-	for target in $(COMPONENT_TARGETS); do \
-		xcodebuild -project Perian.xcodeproj -target $$target -configuration Development build; \
-	done
 	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration Development build
 
 
@@ -37,10 +26,7 @@ debug:
 #	    cp -R build/AIUtilities.framework ~/Library/Frameworks/
 
 clean:
-	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration $(BUILDCONFIGURATION) clean
-	for target in $(COMPONENT_TARGETS); do \
-		xcodebuild -project Perian.xcodeproj -target $$target -configuration $(BUILDCONFIGURATION) clean; \
-	done
+	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration $(BUILDCONFIGURATION)  clean
 
 
 

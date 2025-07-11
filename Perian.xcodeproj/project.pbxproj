@@ -296,8 +296,6 @@
 		8F483B8C0A642886002CCA73 /* PerianAviImporter.r in Rez */ = {isa = PBXBuildFile; fileRef = 8F483B8B0A642886002CCA73 /* PerianAviImporter.r */; };
 		F50E79F61014F62500D3E6FF /* codecID.c.m4 in Sources */ = {isa = PBXBuildFile; fileRef = F50E79F51014F61B00D3E6FF /* codecID.c.m4 */; };
 		F50E79F71014F62D00D3E6FF /* codecResources.r.m4 in Rez */ = {isa = PBXBuildFile; fileRef = F50E79F41014F61B00D3E6FF /* codecResources.r.m4 */; };
-		FF001A2C0000000100000001 /* FFusionResources.r in Rez */ = {isa = PBXBuildFile; fileRef = FF001A2A0000000100000001 /* FFusionResources.r */; };
-		FF001A2D0000000100000001 /* FFissionResources.r in Rez */ = {isa = PBXBuildFile; fileRef = FF001A2B0000000100000001 /* FFissionResources.r */; };
 		F52286260B50625E00F8CF7D /* bitstream_info.c in Sources */ = {isa = PBXBuildFile; fileRef = F52286250B50625E00F8CF7D /* bitstream_info.c */; };
 		F539CD120B62BC82005A72C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F539CD110B62BC82005A72C9 /* Foundation.framework */; };
 		F53E18E50B4F483C003A0471 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53E18E40B4F483C003A0471 /* Security.framework */; };
@@ -311,15 +309,6 @@
 		F5BD48FE121786C90089D5FA /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD48A4121784320089D5FA /* AudioUnit.framework */; };
 		F5CFD1C10B5000DF00616865 /* GBPerianPanePListGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CFD1BD0B5000CE00616865 /* GBPerianPanePListGenerator.m */; };
 		F5EB823E0BA7221F001064E5 /* PerianUpdateChecker.app in Resources */ = {isa = PBXBuildFile; fileRef = 116C42520B5041BD00FB0738 /* PerianUpdateChecker.app */; };
-		69E39A1EFB90456380AC4FF4 /* codecID.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DFA01BF1547D290BAE673 /* codecID.c */; };
-		AVI001230B6B1A540051299D /* SubContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D211A1F0B6B1A540051299D /* SubContext.m */; };
-		AVI001240B6B1A660051299D /* SubUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D211A220B6B1A660051299D /* SubUtilities.m */; };
-		AVI001250B6B1AD80051299D /* SubParsing.m.rl in Sources */ = {isa = PBXBuildFile; fileRef = 3D211A2F0B6B1AD80051299D /* SubParsing.m.rl */; };
-		AVI001260B6C92F000416863 /* SubATSUIRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2BB280B6C92F000416863 /* SubATSUIRenderer.m */; };
-		AVI001270AD0A3FF003EDE52 /* VobSubCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = 6123D6220AD0A3FE003EDE52 /* VobSubCodec.c */; };
-		AVI001280AD1FB650098A825 /* TextSubCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = 613CD51A0AD1FB650098A825 /* TextSubCodec.c */; };
-		AVI001290AC8E382000EFC7D /* MatroskaCodecIDs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61D691500AC8E382000EFC7D /* MatroskaCodecIDs.cpp */; };
-		MAT001300B50625E00F8CF7D /* bitstream_info.c in Sources */ = {isa = PBXBuildFile; fileRef = F52286250B50625E00F8CF7D /* bitstream_info.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -554,15 +543,7 @@
 		1184A38B0B505A9800C8452A /* SUStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUStatusController.h; sourceTree = "<group>"; };
 		1184A38C0B505A9800C8452A /* SUStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUStatusController.m; sourceTree = "<group>"; };
 		11A709DA0A3CFCB6002058D4 /* Perian-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Perian-Info.plist"; path = "Plists/Perian-Info.plist"; sourceTree = "<group>"; };
-		11A709DB0A3CFCB6002058D4 /* FFusion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFusion-Info.plist"; path = "Plists/FFusion-Info.plist"; sourceTree = "<group>"; };
-		11A709DC0A3CFCB6002058D4 /* FFission-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFission-Info.plist"; path = "Plists/FFission-Info.plist"; sourceTree = "<group>"; };
-		11A709DD0A3CFCB6002058D4 /* matroska-qt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "matroska-qt-Info.plist"; path = "Plists/matroska-qt-Info.plist"; sourceTree = "<group>"; };
-		11A709DE0A3CFCB6002058D4 /* AVIImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AVIImporter-Info.plist"; path = "Plists/AVIImporter-Info.plist"; sourceTree = "<group>"; };
 		11A70AC10A3D0105002058D4 /* Perian.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Perian.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D49233179194CC7AAF0D826 /* FFusion.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFusion.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		71E4932756094763BEC0DB3B /* FFission.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFission.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F5D646399CF5493C5C51F02 /* matroska-qt.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "matroska-qt.component"; sourceTree = BUILT_PRODUCTS_DIR; };
-		41F6560DA09D5F5693BCDDF0 /* AVIImporter.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVIImporter.component; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BEFB2C0C18E23E00BC9324 /* Read Me.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "Read Me.rtf"; path = "Release/Read Me.rtf"; sourceTree = "<group>"; };
 		11C85ED30A641E6400DF3D73 /* ff_dataref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_dataref.c; sourceTree = "<group>"; };
 		11C85ED40A641E6400DF3D73 /* ff_MovieImport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_MovieImport.c; sourceTree = "<group>"; };
@@ -775,8 +756,6 @@
 		8F483B5D0A6426C1002CCA73 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8F483B8B0A642886002CCA73 /* PerianAviImporter.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = PerianAviImporter.r; sourceTree = "<group>"; };
 		8F483BBC0A642B3D002CCA73 /* ff_MovieImportDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_MovieImportDispatch.h; sourceTree = "<group>"; };
-		FF001A2A0000000100000001 /* FFusionResources.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = FFusionResources.r; sourceTree = "<group>"; };
-		FF001A2B0000000100000001 /* FFissionResources.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = FFissionResources.r; sourceTree = "<group>"; };
 		F50E79F41014F61B00D3E6FF /* codecResources.r.m4 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; fileEncoding = 4; path = codecResources.r.m4; sourceTree = "<group>"; };
 		F50E79F51014F61B00D3E6FF /* codecID.c.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = codecID.c.m4; sourceTree = "<group>"; };
 		F52286240B50625E00F8CF7D /* bitstream_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream_info.h; sourceTree = "<group>"; };
@@ -802,7 +781,6 @@
 		F5C89FC510220C800032D02A /* PerianResourceIDs.h.m4 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c; fileEncoding = 4; path = PerianResourceIDs.h.m4; sourceTree = "<group>"; };
 		F5CFD1B40B50009000616865 /* PerianPanePListGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PerianPanePListGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5CFD1BD0B5000CE00616865 /* GBPerianPanePListGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBPerianPanePListGenerator.m; sourceTree = "<group>"; };
-		1E0DFA01BF1547D290BAE673 /* codecID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = codecID.c; path = "$(CONFIGURATION_TEMP_DIR)/Perian.build/DerivedSources/codecID.c"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -921,94 +899,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B8D67754C5B6FBE1E12CC6A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11A70ACE0A3D0131002058D4 /* Carbon.framework in Frameworks */,
-				11A70AD30A3D0131002058D4 /* QuickTime.framework in Frameworks */,
-				11A70ACF0A3D0131002058D4 /* libavcodec.a in Frameworks */,
-				11A70AD00A3D0131002058D4 /* libavutil.a in Frameworks */,
-				8F483B550A642644002CCA73 /* libavformat.a in Frameworks */,
-				61CB11F30ACE0F6D007994BD /* libebml.a in Frameworks */,
-				61CB11F40ACE0F73007994BD /* libmatroska.a in Frameworks */,
-				3D41BEB40BCD3B510069E7C2 /* libuniversaldetector.a in Frameworks */,
-				3DC5B7D10FFE8F420079A6C0 /* CoreVideo.framework in Frameworks */,
-				3DC5B7D20FFE8F420079A6C0 /* Accelerate.framework in Frameworks */,
-				3D211A1D0B6B18880051299D /* Foundation.framework in Frameworks */,
-				11A70AD20A3D0131002058D4 /* libz.dylib in Frameworks */,
-				8F483B5E0A6426C1002CCA73 /* AudioToolbox.framework in Frameworks */,
-				3DAD08850FBF83EB001E156F /* CoreFoundation.framework in Frameworks */,
-				F5BD48FE121786C90089D5FA /* AudioUnit.framework in Frameworks */,
-				3D95B9020E20896F007C8F51 /* libbz2.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B538D76B9C3C7BA7F2046F7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11A70ACE0A3D0131002058D4 /* Carbon.framework in Frameworks */,
-				11A70AD30A3D0131002058D4 /* QuickTime.framework in Frameworks */,
-				11A70ACF0A3D0131002058D4 /* libavcodec.a in Frameworks */,
-				11A70AD00A3D0131002058D4 /* libavutil.a in Frameworks */,
-				8F483B550A642644002CCA73 /* libavformat.a in Frameworks */,
-				61CB11F30ACE0F6D007994BD /* libebml.a in Frameworks */,
-				61CB11F40ACE0F73007994BD /* libmatroska.a in Frameworks */,
-				3D41BEB40BCD3B510069E7C2 /* libuniversaldetector.a in Frameworks */,
-				3DC5B7D10FFE8F420079A6C0 /* CoreVideo.framework in Frameworks */,
-				3DC5B7D20FFE8F420079A6C0 /* Accelerate.framework in Frameworks */,
-				3D211A1D0B6B18880051299D /* Foundation.framework in Frameworks */,
-				11A70AD20A3D0131002058D4 /* libz.dylib in Frameworks */,
-				8F483B5E0A6426C1002CCA73 /* AudioToolbox.framework in Frameworks */,
-				3DAD08850FBF83EB001E156F /* CoreFoundation.framework in Frameworks */,
-				F5BD48FE121786C90089D5FA /* AudioUnit.framework in Frameworks */,
-				3D95B9020E20896F007C8F51 /* libbz2.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD9AA8B7DDF398A709A96346 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11A70ACE0A3D0131002058D4 /* Carbon.framework in Frameworks */,
-				11A70AD30A3D0131002058D4 /* QuickTime.framework in Frameworks */,
-				61CB11F30ACE0F6D007994BD /* libebml.a in Frameworks */,
-				61CB11F40ACE0F73007994BD /* libmatroska.a in Frameworks */,
-				3D41BEB40BCD3B510069E7C2 /* libuniversaldetector.a in Frameworks */,
-				11A70ACF0A3D0131002058D4 /* libavcodec.a in Frameworks */,
-				11A70AD00A3D0131002058D4 /* libavutil.a in Frameworks */,
-				8F483B550A642644002CCA73 /* libavformat.a in Frameworks */,
-				3D211A1D0B6B18880051299D /* Foundation.framework in Frameworks */,
-				11A70AD20A3D0131002058D4 /* libz.dylib in Frameworks */,
-				8F483B5E0A6426C1002CCA73 /* AudioToolbox.framework in Frameworks */,
-				3DAD08850FBF83EB001E156F /* CoreFoundation.framework in Frameworks */,
-				F5BD48FE121786C90089D5FA /* AudioUnit.framework in Frameworks */,
-				3D95B9020E20896F007C8F51 /* libbz2.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		854A9A4FEE3F9F9A4A071014 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11A70ACE0A3D0131002058D4 /* Carbon.framework in Frameworks */,
-				11A70AD30A3D0131002058D4 /* QuickTime.framework in Frameworks */,
-				11A70ACF0A3D0131002058D4 /* libavcodec.a in Frameworks */,
-				11A70AD00A3D0131002058D4 /* libavutil.a in Frameworks */,
-				8F483B550A642644002CCA73 /* libavformat.a in Frameworks */,
-				3D41BEB40BCD3B510069E7C2 /* libuniversaldetector.a in Frameworks */,
-				61CB11F30ACE0F6D007994BD /* libebml.a in Frameworks */,
-				61CB11F40ACE0F73007994BD /* libmatroska.a in Frameworks */,
-				3D211A1D0B6B18880051299D /* Foundation.framework in Frameworks */,
-				11A70AD20A3D0131002058D4 /* libz.dylib in Frameworks */,
-				8F483B5E0A6426C1002CCA73 /* AudioToolbox.framework in Frameworks */,
-				3DAD08850FBF83EB001E156F /* CoreFoundation.framework in Frameworks */,
-				F5BD48FE121786C90089D5FA /* AudioUnit.framework in Frameworks */,
-				3D95B9020E20896F007C8F51 /* libbz2.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1074,8 +964,6 @@
 				61D691590AC8E382000EFC7D /* MatroskaImport.r */,
 				61D691540AC8E382000EFC7D /* MatroskaExport.r */,
 				8F483B8B0A642886002CCA73 /* PerianAviImporter.r */,
-				FF001A2A0000000100000001 /* FFusionResources.r */,
-				FF001A2B0000000100000001 /* FFissionResources.r */,
 				089C167EFE841241C02AAC07 /* InfoPlist.strings */,
 				F50D440903EAD8E701B1D299 /* Images */,
 				F59B2AB81007A0D000FAAAD8 /* PerianResources.r */,
@@ -1147,10 +1035,6 @@
 			isa = PBXGroup;
 			children = (
 				11A70AC10A3D0105002058D4 /* Perian.component */,
-				2D49233179194CC7AAF0D826 /* FFusion.component */,
-				71E4932756094763BEC0DB3B /* FFission.component */,
-				7F5D646399CF5493C5C51F02 /* matroska-qt.component */,
-				41F6560DA09D5F5693BCDDF0 /* AVIImporter.component */,
 				61CB10FF0ACDF350007994BD /* libebml.a */,
 				61CB11770ACDF4D8007994BD /* libmatroska.a */,
 				83D1D6C80B4C794700E09EC9 /* Perian.prefPane */,
@@ -1790,101 +1674,6 @@
 			productReference = F5CFD1B40B50009000616865 /* PerianPanePListGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
-		1C38122068084BB699EEC715 /* FFusion.component */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E5A344289284DD8BBE1E937 /* Build configuration list for PBXNativeTarget "FFusion.component" */;
-			buildPhases = (
-				AA8988B7C3AC4469B80F9E43 /* ShellScript */,
-				5A7C56642B4A5FFA0D013B59 /* Resources */,
-				4F6B45530A394EE9CCF2FA48 /* Sources */,
-				6B8D67754C5B6FBE1E12CC6A /* Frameworks */,
-				FF001A2E0000000100000001 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11BA3DB00A61EE90008AF206 /* PBXTargetDependency */,
-				61CB12100ACE0FB1007994BD /* PBXTargetDependency */,
-				61CB12120ACE0FB1007994BD /* PBXTargetDependency */,
-				F5121EBD0EB3A5AE0048EF67 /* PBXTargetDependency */,
-				F59E09EC0A670E420019A3F0 /* PBXTargetDependency */,
-			);
-			name = "FFusion.component";
-			productName = "FFusion.component";
-			productReference = 2D49233179194CC7AAF0D826 /* FFusion.component */;
-			productType = "com.apple.product-type.bundle";
-		};
-		60D3821645F84652ADBDCA2A /* FFission.component */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82F5A43867194874CFD1EC4C /* Build configuration list for PBXNativeTarget "FFission.component" */;
-			buildPhases = (
-				38D29B75A2CF4CC79E9DD0F5 /* ShellScript */,
-				A427C65A8B2B6A96E1F30E6E /* Resources */,
-				9316B549781A5985D0E2FD5D /* Sources */,
-				B538D76B9C3C7BA7F2046F7F /* Frameworks */,
-				FF001A2F0000000100000001 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11BA3DB00A61EE90008AF206 /* PBXTargetDependency */,
-				61CB12100ACE0FB1007994BD /* PBXTargetDependency */,
-				61CB12120ACE0FB1007994BD /* PBXTargetDependency */,
-				F5121EBD0EB3A5AE0048EF67 /* PBXTargetDependency */,
-				F59E09EC0A670E420019A3F0 /* PBXTargetDependency */,
-			);
-			name = "FFission.component";
-			productName = "FFission.component";
-			productReference = 71E4932756094763BEC0DB3B /* FFission.component */;
-			productType = "com.apple.product-type.bundle";
-		};
-		6E4C53628BBE4393B4B40EF1 /* matroska-qt.component */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A6E7574AAD06594D6D63013 /* Build configuration list for PBXNativeTarget "matroska-qt.component" */;
-			buildPhases = (
-				3B19A5F6F66F4E77AB1348C1 /* ShellScript */,
-				AC8997A6CCF28796F8F85235 /* Resources */,
-				9B7F8685BBE17695E7E74124 /* Sources */,
-				BD9AA8B7DDF398A709A96346 /* Frameworks */,
-				MKV001A400000001000000B1 /* Rez */,
-			);
-			buildRules = (
-				3D74F53C0B6DB50C0018BAC0 /* PBXBuildRule */,
-			);
-			dependencies = (
-				61CB12100ACE0FB1007994BD /* PBXTargetDependency */,
-				61CB12120ACE0FB1007994BD /* PBXTargetDependency */,
-				F5121EBD0EB3A5AE0048EF67 /* PBXTargetDependency */,
-				F59E09EC0A670E420019A3F0 /* PBXTargetDependency */,
-			);
-			name = "matroska-qt.component";
-			productName = "matroska-qt.component";
-			productReference = 7F5D646399CF5493C5C51F02 /* matroska-qt.component */;
-			productType = "com.apple.product-type.bundle";
-		};
-		30E545C89F8C4F4582ABCCEF /* AVIImporter.component */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5217671EBA0E6F671A4DEEF1 /* Build configuration list for PBXNativeTarget "AVIImporter.component" */;
-			buildPhases = (
-				09038C6ECBD241A8B446551E /* ShellScript */,
-				7439893FDD2F8F8939F6FFF3 /* Resources */,
-				6328782FCB1F7F7829E5EFF2 /* Sources */,
-				854A9A4FEE3F9F9A4A071014 /* Frameworks */,
-				AVI001A300000001000000A1 /* Rez */,
-			);
-			buildRules = (
-				3D74F53C0B6DB50C0018BAC0 /* PBXBuildRule */,
-			);
-			dependencies = (
-				11BA3DB00A61EE90008AF206 /* PBXTargetDependency */,
-				F5121EBD0EB3A5AE0048EF67 /* PBXTargetDependency */,
-				F59E09EC0A670E420019A3F0 /* PBXTargetDependency */,
-			);
-			name = "AVIImporter.component";
-			productName = "AVIImporter.component";
-			productReference = 41F6560DA09D5F5693BCDDF0 /* AVIImporter.component */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1917,10 +1706,6 @@
 			projectRoot = "";
 			targets = (
 				11A70AC00A3D0105002058D4 /* Perian */,
-				1C38122068084BB699EEC715 /* FFusion.component */,
-				60D3821645F84652ADBDCA2A /* FFission.component */,
-				6E4C53628BBE4393B4B40EF1 /* matroska-qt.component */,
-				30E545C89F8C4F4582ABCCEF /* AVIImporter.component */,
 				11BA39A80A61E450008AF206 /* FFmpeg Static Libraries */,
 				F59E09EA0A670E3D0019A3F0 /* Debug in QuickTime Player */,
 				61CB10FE0ACDF350007994BD /* ebml */,
@@ -2006,38 +1791,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A7C56642B4A5FFA0D013B59 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11207C730C2F4A4E002A0FF0 /* ComponentInfo.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A427C65A8B2B6A96E1F30E6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11207C730C2F4A4E002A0FF0 /* ComponentInfo.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC8997A6CCF28796F8F85235 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11207C730C2F4A4E002A0FF0 /* ComponentInfo.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7439893FDD2F8F8939F6FFF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11207C730C2F4A4E002A0FF0 /* ComponentInfo.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
@@ -2045,37 +1798,8 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF001A2E0000000100000001 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF001A2C0000000100000001 /* FFusionResources.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF001A2F0000000100000001 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF001A2D0000000100000001 /* FFissionResources.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AVI001A300000001000000A1 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F50E79F71014F62D00D3E6FF /* codecResources.r.m4 in Rez */,
 				8F483B8C0A642886002CCA73 /* PerianAviImporter.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		MKV001A400000001000000B1 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				61CB12260ACE1074007994BD /* MatroskaImport.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2168,78 +1892,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"${SRCROOT}/a52codec\"\nrm -Rf build\nln -s \"$BUILD_DIR\" build";
-		};
-		AA8988B7C3AC4469B80F9E43 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/PerianResourceIDs.h.m4",
-				"$(SRCROOT)/defines.m4",
-				"$(SRCROOT)/codecList.m4",
-				"$(SRCROOT)/scripts/generateCodecIDs.sh",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/PerianResourceIDs.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\nsource \"${SCRIPT_INPUT_FILE_3}\"";
-		};
-		38D29B75A2CF4CC79E9DD0F5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/PerianResourceIDs.h.m4",
-				"$(SRCROOT)/defines.m4",
-				"$(SRCROOT)/codecList.m4",
-				"$(SRCROOT)/scripts/generateCodecIDs.sh",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/PerianResourceIDs.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\nsource \"${SCRIPT_INPUT_FILE_3}\"";
-		};
-		3B19A5F6F66F4E77AB1348C1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/PerianResourceIDs.h.m4",
-				"$(SRCROOT)/defines.m4",
-				"$(SRCROOT)/codecList.m4",
-				"$(SRCROOT)/scripts/generateCodecIDs.sh",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/PerianResourceIDs.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\nsource \"${SCRIPT_INPUT_FILE_3}\"";
-		};
-		09038C6ECBD241A8B446551E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/PerianResourceIDs.h.m4",
-				"$(SRCROOT)/defines.m4",
-				"$(SRCROOT)/codecList.m4",
-				"$(SRCROOT)/scripts/generateCodecIDs.sh",
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/PerianResourceIDs.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\nsource \"${SCRIPT_INPUT_FILE_3}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2425,109 +2077,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F6B45530A394EE9CCF2FA48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11C85ED80A641E6400DF3D73 /* ff_dataref.c in Sources */,
-				11C85EDA0A641E6400DF3D73 /* ff_private.c in Sources */,
-				112E0C820A6436BA00DB4C29 /* FFusionCodec.c in Sources */,
-				113F589A0A6B091600509987 /* Codecprintf.c in Sources */,
-				61D517730AE0402E00A671E1 /* CommonUtils.c in Sources */,
-				F52286260B50625E00F8CF7D /* bitstream_info.c in Sources */,
-				3D4A7A990B5533BC004C5D6A /* ColorConversions.c in Sources */,
-				F57676060BE1A18300B2434B /* FrameBuffer.c in Sources */,
-				F5BD450B12171C4C0089D5FA /* CompressVideoCodec.c in Sources */,
-				F5BD4764121769B90089D5FA /* CompressCodecUtils.c in Sources */,
-				3DA6322512865F5400AC1962 /* FFmpegUtils.c in Sources */,
-				3DCF890915042C8400C171F8 /* ACCodec.cpp in Sources */,
-				3DCF890A15042C8400C171F8 /* GetCodecBundle_Perian.cpp in Sources */,
-				3DCF890B15042C8400C171F8 /* ComponentBase.cpp in Sources */,
-				3D0E88401504307C00C0EA90 /* CABundleLocker.cpp in Sources */,
-				3D0E88421504307C00C0EA90 /* CAStreamBasicDescription.cpp in Sources */,
-				3D0E8846150430C900C0EA90 /* ACPlugInDispatch.cpp in Sources */,
-				3D0E88471504311A00C0EA90 /* CAXException.cpp in Sources */,
-				3D0E88481504311E00C0EA90 /* CADebugMacros.cpp in Sources */,
-				3D0E88651504339B00C0EA90 /* CADebugPrintf.cpp in Sources */,
-				3D211A230B6B1A660051299D /* SubUtilities.m in Sources */,
-				69E39A1EFB90456380AC4FF4 /* codecID.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9316B549781A5985D0E2FD5D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				113F589A0A6B091600509987 /* Codecprintf.c in Sources */,
-				61D517730AE0402E00A671E1 /* CommonUtils.c in Sources */,
-				6116E5580B43C27B0020F1CE /* FFissionCodec.cpp in Sources */,
-				6116E55A0B43C27B0020F1CE /* FFissionDecoder.cpp in Sources */,
-				6156986F0BCDA87700E17ADE /* ringbuffer.cpp in Sources */,
-				F5BD48FA121786C50089D5FA /* CompressAudioCodec.cpp in Sources */,
-				F5BD4764121769B90089D5FA /* CompressCodecUtils.c in Sources */,
-				3DCF890815042C8400C171F8 /* ACBaseCodec.cpp in Sources */,
-				3DCF890915042C8400C171F8 /* ACCodec.cpp in Sources */,
-				3DCF890A15042C8400C171F8 /* GetCodecBundle_Perian.cpp in Sources */,
-				3DCF890B15042C8400C171F8 /* ComponentBase.cpp in Sources */,
-				3D0E88401504307C00C0EA90 /* CABundleLocker.cpp in Sources */,
-				3D0E88421504307C00C0EA90 /* CAStreamBasicDescription.cpp in Sources */,
-				3D0E8846150430C900C0EA90 /* ACPlugInDispatch.cpp in Sources */,
-				3D0E88471504311A00C0EA90 /* CAXException.cpp in Sources */,
-				3D0E88481504311E00C0EA90 /* CADebugMacros.cpp in Sources */,
-				3D0E88651504339B00C0EA90 /* CADebugPrintf.cpp in Sources */,
-				3DA6322512865F5400AC1962 /* FFmpegUtils.c in Sources */,
-				69E39A1EFB90456380AC4FF4 /* codecID.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B7F8685BBE17695E7E74124 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61CB12090ACE0F85007994BD /* MatroskaImport.cpp in Sources */,
-				61CB120C0ACE0F8A007994BD /* DataHandlerCallback.cpp in Sources */,
-				61CB120D0ACE0F8D007994BD /* MatroskaCodecIDs.cpp in Sources */,
-				61FD41330B4F6F0800BEEFEA /* MatroskaImportPrivate.cpp in Sources */,
-				61D517730AE0402E00A671E1 /* CommonUtils.c in Sources */,
-				113F589A0A6B091600509987 /* Codecprintf.c in Sources */,
-				11C85EDA0A641E6400DF3D73 /* ff_private.c in Sources */,
-				F5BD4764121769B90089D5FA /* CompressCodecUtils.c in Sources */,
-				61D514DE0ADF3DBA00A671E1 /* SubImport.mm in Sources */,
-				6123D6260AD0A3FF003EDE52 /* VobSubCodec.c in Sources */,
-				613CD51E0AD1FB650098A825 /* TextSubCodec.c in Sources */,
-				3D211A230B6B1A660051299D /* SubUtilities.m in Sources */,
-				3D211A200B6B1A540051299D /* SubContext.m in Sources */,
-				3D211A300B6B1AD80051299D /* SubParsing.m.rl in Sources */,
-				3DB2BB290B6C92F000416863 /* SubATSUIRenderer.m in Sources */,
-				MAT001300B50625E00F8CF7D /* bitstream_info.c in Sources */,
-				69E39A1EFB90456380AC4FF4 /* codecID.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6328782FCB1F7F7829E5EFF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11C85ED80A641E6400DF3D73 /* ff_dataref.c in Sources */,
-				11C85EDA0A641E6400DF3D73 /* ff_private.c in Sources */,
-				11C85FE50A64314400DF3D73 /* ff_MovieImport.c in Sources */,
-				113F589A0A6B091600509987 /* Codecprintf.c in Sources */,
-				61D517730AE0402E00A671E1 /* CommonUtils.c in Sources */,
-				F52286260B50625E00F8CF7D /* bitstream_info.c in Sources */,
-				3DA6322512865F5400AC1962 /* FFmpegUtils.c in Sources */,
-				F5BD4764121769B90089D5FA /* CompressCodecUtils.c in Sources */,
-				61D514DE0ADF3DBA00A671E1 /* SubImport.mm in Sources */,
-				AVI001230B6B1A540051299D /* SubContext.m in Sources */,
-				AVI001240B6B1A660051299D /* SubUtilities.m in Sources */,
-				AVI001250B6B1AD80051299D /* SubParsing.m.rl in Sources */,
-				AVI001260B6C92F000416863 /* SubATSUIRenderer.m in Sources */,
-				AVI001270AD0A3FF003EDE52 /* VobSubCodec.c in Sources */,
-				AVI001280AD1FB650098A825 /* TextSubCodec.c in Sources */,
-				AVI001290AC8E382000EFC7D /* MatroskaCodecIDs.cpp in Sources */,
-				69E39A1EFB90456380AC4FF4 /* codecID.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2672,7 +2221,6 @@
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 					/Developer/Extras/CoreAudio/PublicUtility,
 					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
 				);
 				INFOPLIST_FILE = "Plists/Perian-Info.plist";
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
@@ -2716,7 +2264,6 @@
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 					/Developer/Extras/CoreAudio/PublicUtility,
 					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
 				);
 				INFOPLIST_FILE = "Plists/Perian-Info.plist";
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
@@ -3325,522 +2872,6 @@
 			};
 			name = Deployment;
 		};
-		7C9E78865D6C7FCF2F23DD7B /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFusionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFusion-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFusion;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Development;
-		};
-		8DAF99976E7D8FDF4F34EE8C /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFusionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFusion-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFusion;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Deployment;
-		};
-		9EBA1AA87F8E9FEF6F45FF9D /* Deployment+Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFusionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFusion-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFusion;
-				WRAPPER_EXTENSION = component;
-			};
-			name = "Deployment+Debug";
-		};
-		C649E87CAD4D8CB8032157A0 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFissionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFission-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFission;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Development;
-		};
-		D75AF98DBE5E9DC9143268B1 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFissionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFission-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFission;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Deployment;
-		};
-		E86B0A9ECF6FAEDA254379C2 /* Deployment+Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/FFissionExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/FFission-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = FFission;
-				WRAPPER_EXTENSION = component;
-			};
-			name = "Deployment+Debug";
-		};
-		CEABB9C8EEF449B80AB07457 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/MatroskaExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/matroska-qt-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = "matroska-qt";
-				WRAPPER_EXTENSION = component;
-			};
-			name = Development;
-		};
-		DFBCCAD9FFF55AC91BC18858 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/MatroskaExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/matroska-qt-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = "matroska-qt";
-				WRAPPER_EXTENSION = component;
-			};
-			name = Deployment;
-		};
-		E0CD0BEAAA065BDA2CD29969 /* Deployment+Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/MatroskaExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/matroska-qt-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = "matroska-qt";
-				WRAPPER_EXTENSION = component;
-			};
-			name = "Deployment+Debug";
-		};
-		965BAB5FFF4FAFA565B18225 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/AVIImporterExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/AVIImporter-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = AVIImporter;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Development;
-		};
-		976CBC6F0059B0B6667C9336 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/AVIImporterExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/AVIImporter-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = AVIImporter;
-				WRAPPER_EXTENSION = component;
-			};
-			name = Deployment;
-		};
-		A87DCD70115AC1C7778DA447 /* Deployment+Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				EXPORTED_SYMBOLS_FILE = Resources/AVIImporterExportedSymbols.txt;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Prefix.h;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = (
-					/Developer/Extras/CoreAudio/AudioCodecs/ACPublic,
-					"\"$(BUILT_PRODUCTS_DIR)\"/$(arch)",
-					libmatroska,
-					libebml,
-					ffmpeg,
-					"\"$(BUILT_PRODUCTS_DIR)\"",
-					/Developer/Extras/CoreAudio/PublicUtility,
-					/Developer/Extras/CoreAudio/AudioUnits/AUPublic/AUBase,
-					"\"$(DERIVED_FILE_DIR)\"",
-				);
-				INFOPLIST_FILE = "Plists/AVIImporter-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-C";
-				INFOPLIST_PREFIX_HEADER = "$(TARGET_BUILD_DIR)/include/SVNRevision.h";
-				INFOPLIST_PREPROCESS = YES;
-				INSTALL_PATH = "$(HOME)/Library/QuickTime";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/DerivedData/Perian/Build/Products/Deployment+Debug/Universal\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-read_only_relocs",
-					suppress,
-				);
-				PRODUCT_NAME = AVIImporter;
-				WRAPPER_EXTENSION = component;
-			};
-			name = "Deployment+Debug";
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4000,46 +3031,6 @@
 				F5CFD3C20B50144E00616865 /* Development */,
 				F5CFD3C30B50144E00616865 /* Deployment */,
 				3D4BBE4B0B59EE0A000EDE04 /* Deployment+Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Deployment+Debug";
-		};
-		3E5A344289284DD8BBE1E937 /* Build configuration list for PBXNativeTarget "FFusion.component" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C9E78865D6C7FCF2F23DD7B /* Development */,
-				8DAF99976E7D8FDF4F34EE8C /* Deployment */,
-				9EBA1AA87F8E9FEF6F45FF9D /* Deployment+Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Deployment+Debug";
-		};
-		82F5A43867194874CFD1EC4C /* Build configuration list for PBXNativeTarget "FFission.component" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C649E87CAD4D8CB8032157A0 /* Development */,
-				D75AF98DBE5E9DC9143268B1 /* Deployment */,
-				E86B0A9ECF6FAEDA254379C2 /* Deployment+Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Deployment+Debug";
-		};
-		8A6E7574AAD06594D6D63013 /* Build configuration list for PBXNativeTarget "matroska-qt.component" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEABB9C8EEF449B80AB07457 /* Development */,
-				DFBCCAD9FFF55AC91BC18858 /* Deployment */,
-				E0CD0BEAAA065BDA2CD29969 /* Deployment+Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Deployment+Debug";
-		};
-		5217671EBA0E6F671A4DEEF1 /* Build configuration list for PBXNativeTarget "AVIImporter.component" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				965BAB5FFF4FAFA565B18225 /* Development */,
-				976CBC6F0059B0B6667C9336 /* Deployment */,
-				A87DCD70115AC1C7778DA447 /* Deployment+Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Deployment+Debug";
