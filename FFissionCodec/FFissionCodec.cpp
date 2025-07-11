@@ -162,3 +162,21 @@ void FFissionCodec::GetProperty(AudioCodecPropertyID inPropertyID, UInt32& ioPro
 			ACBaseCodec::GetProperty(inPropertyID, ioPropertyDataSize, outPropertyData);
 	}
 }
+
+// QuickTime ComponentDispatch function for FFission
+extern "C" {
+	// Forward declarations of the decoder entry points
+	ComponentResult FFissionDecoderEntry(ComponentParameters *params, Handle storage);
+	ComponentResult FFissionVBRDecoderEntry(ComponentParameters *params, Handle storage);
+	ComponentResult CompressAudioDecoderEntry(ComponentParameters *params, Handle storage);
+}
+
+// ComponentDispatch function for FFission - must be extern "C" and visible
+#pragma GCC visibility push(default)
+extern "C" ComponentResult FFissionComponentDispatch(ComponentParameters *params, Handle storage)
+{
+	// This is the main entry point for QuickTime component calls
+	// Route to the appropriate decoder based on the component subtype
+	return FFissionDecoderEntry(params, storage);
+}
+#pragma GCC visibility pop

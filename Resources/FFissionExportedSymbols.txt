@@ -1,3 +1,4 @@
+_FFissionComponentDispatch
 _FFissionDecoderEntry
 _FFissionVBRDecoderEntry
 _CompressAudioDecoderEntry
