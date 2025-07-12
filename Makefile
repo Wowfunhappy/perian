@@ -27,6 +27,7 @@ debug:
 
 clean:
 	xcodebuild -project Perian.xcodeproj -target $(DEFAULT_TARGET) -configuration $(BUILDCONFIGURATION)  clean
+	$(RM) -rf $(BUILD_DIR)
 
 
 
