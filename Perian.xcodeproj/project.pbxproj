@@ -1459,6 +1459,7 @@
 				11A70ABE0A3D0105002058D4 /* Sources */,
 				11A70ABF0A3D0105002058D4 /* Frameworks */,
 				11A70ADC0A3D0156002058D4 /* Rez */,
+				F5FFFF001111DEAD001BEEF1 /* Copy Media UTI Registration */,
 			);
 			buildRules = (
 				F50E79EE1014F53A00D3E6FF /* PBXBuildRule */,
@@ -1810,6 +1811,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd \"${SRCROOT}/a52codec\"\nrm -Rf build\nln -s \"$BUILD_DIR\" build";
+		};
+		F5FFFF001111DEAD001BEEF1 /* Copy Media UTI Registration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy Media UTI Registration.app into Perian.component\nif [ -d \"${SRCROOT}/Media UTI Registration.app\" ]; then\n    ditto --rsrc \"${SRCROOT}/Media UTI Registration.app\" \"${BUILT_PRODUCTS_DIR}/Perian.component/Contents/Resources/Media UTI Registration.app\"\n    echo \"Copied Media UTI Registration.app to Perian.component\"\nelse\n    echo \"Warning: Media UTI Registration.app not found at ${SRCROOT}/Media UTI Registration.app\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
