@@ -604,6 +604,24 @@ static const AudioChannelLayout dtsChannelLayouts[6] = {
 AudioChannelLayout GetDefaultChannelLayout(AudioStreamBasicDescription *asbd)
 {
 	AudioChannelLayout acl = {0};
+	
+	// Handle stereo (2 channels) specially
+	if (asbd->mChannelsPerFrame == 2) {
+		switch (asbd->mFormatID) {
+			case kAudioFormatXiphVorbis:
+			case kAudioFormatXiphFLAC:
+			case kAudioFormatMPEG4AAC:
+			case kAudioFormatAC3:
+			case kAudioFormatAC3MS:
+			case 'ec-3':
+			case kAudioFormatDTS:
+				acl.mChannelLayoutTag = kAudioChannelLayoutTag_Stereo;
+				break;
+		}
+		return acl;
+	}
+	
+	// Handle 3-8 channels
 	int channelIndex = asbd->mChannelsPerFrame - 3;
 	
 	if (channelIndex >= 0 && channelIndex < 6) {
